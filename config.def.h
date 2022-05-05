@@ -4,10 +4,10 @@ static const char *group = "nogroup";
 
 static const char *colorname[NUMCOLS] = {
     [BACKGROUND] = "white",
-	[INIT] = "black",       /* after initialization */
-	[INPUT] = "#005577",    /* during input */
-	[FAILED] = "#CC3333",   /* wrong password */
-	[CAPS] = "red",         /* CapsLock on */
+	[INIT] = "#282828",       /* after initialization */
+	[INPUT] = "#458588",    /* during input */
+	[FAILED] = "#CC241D",   /* wrong password */
+	[CAPS] = "#FABD2F",         /* CapsLock on */
 };
 
 /*
@@ -17,7 +17,7 @@ ResourcePref resources[] = {
 		{ "color0",       STRING,  &colorname[INIT] },
 		{ "color4",       STRING,  &colorname[INPUT] },
 		{ "color1",       STRING,  &colorname[FAILED] },
-		{ "color3",       STRING,  &colorname[CAPS] },
+		{ "color11",       STRING,  &colorname[CAPS] },
 };
 
 /* treat a cleared input like a wrong password (color) */
